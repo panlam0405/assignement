@@ -1,0 +1,14 @@
+#hero-button-decorator {
+    flex-grow: 1;
+    height: 0;
+    margin: auto;
+    border: 1px solid var(--button-decorations-color);
+}
+
+#footer-button-container {
+    display: flex;
+    padding: 48px 16px 72px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}

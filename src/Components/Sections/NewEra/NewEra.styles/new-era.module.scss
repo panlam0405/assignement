@@ -1,0 +1,74 @@
+.new-era-container {
+    padding: 48px 16px;
+}
+
+#new-era-picture-container {
+    margin-bottom:48px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: inherit;
+}
+
+#rectangle {
+    display: flex;
+    align-items: center;
+
+}
+
+#rectangle-shape {
+    width: 361px;
+    height: 361px;
+    rotate: 45deg;
+    z-index: -1;
+    left: 50%;
+    translate: -50%;
+    justify-self: center;
+    position: absolute;
+
+    border: 1px solid var(--button-decorations-color);
+
+}
+
+#photo1 {
+    margin-right: 16px;
+    img{
+        width:121px ;
+        height: 181px;
+    }
+}
+
+#photo2 {
+    img{
+        width: 121px;
+        height: 181px;
+    }
+}
+
+#photo3 {
+    img{
+        width: 207px;
+        height: 139px;
+    }
+}
+
+#new-era-text-container{
+    h2{
+        margin-bottom: 32px;
+        color: var(--h2-color);
+        font-family: Montserrat;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    p {
+        color: var(--text-color);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        /* 200% */}
+}

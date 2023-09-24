@@ -1,4 +1,42 @@
+.hero-container {
+    position: sticky;
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 8px;
+}
+#hero-button-container {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#hero-button-decorator {
+    flex-grow:1 ;
+    height: 0;
+    margin: auto;
+    border: 1px solid var(--button-decorations-color);
+}
+
+#hero-text-container{
+    background-color: var(--background-color);
+    position: absolute;
+    padding: 16px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.frame{
+    flex: 1 0 0;
+    align-self: stretch;
+    position: relative;
+    z-index: 0;
+}
 
 .hero-picture-container{
-    background-image: url("./hero-picture.png");
+    background: url('hero-picture.png'), lightgray 50% ;
+    background-size: cover;
+    background-position: center;
+    height: 768px;
 }

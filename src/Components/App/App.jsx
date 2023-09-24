@@ -8,13 +8,17 @@ import BookYourStayComponent from "../Sections/BookYourStay/BookYourStayComponen
 function App() {
 	return (
 		<>
-			<header>
+			<header id='hero-section'>
 				<HeroSection />
 			</header>
-			<WelcomeComponent />
-			<NewEraComponent />
-			<GrandOpening />
-			<BookYourStayComponent />
+			<main>
+				<WelcomeComponent />
+				<NewEraComponent />
+				<GrandOpening />
+			</main>
+			<footer>
+				<BookYourStayComponent />
+			</footer>
 		</>
 	);
 }
