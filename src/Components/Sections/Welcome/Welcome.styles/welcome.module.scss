@@ -2,11 +2,21 @@
     padding: 96px 16px 48px;
     display: flex;
     flex-direction: column;
+
+    @media screen and (width > 1200px) {
+            flex-direction: row;
+            padding: 192px 10% 96px;
+        }
 }
 
 .frame {
     position: relative;
     height: calc(181px - 48px);
+    @media screen and (width > 1200px) {
+        all:unset;
+            width: 50%;
+            height: auto;
+        }
 }
 
 #welcome-text-container{
@@ -18,6 +28,16 @@
     padding: 96px 24px;
     align-self: stretch;
     border: 1px solid var(--button-decorations-color);
+
+    @media screen and (width > 1200px) {
+            align-self: unset;
+            width: 50%;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 13% 20%;
+            
+        }
+
     
 
     h2 {
@@ -27,6 +47,9 @@
         font-style: normal;
         font-weight: 400;
         line-height: 30px;
+    @media screen and (width > 1200px) {
+        justify-self: flex-start;
+    }
     }
 
     p {
@@ -36,6 +59,9 @@
         font-style: normal;
         font-weight: 400;
         line-height: 28px;
+        @media screen and (width > 1200px) {
+                text-align: left;
+            }
     }
 }
 
@@ -44,13 +70,29 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-self: stretch;
-    
+   
 
     img {
     width: 60%;
+    max-width: 400px;
+    max-height: 400px;
     left: 0;
     bottom: -53px;
     position: absolute;
+    }
+
+    @media screen and (width > 1200px) {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        img {
+            max-width: 708px;
+            max-height: 708px;
+            width: 150%;
+            position: relative;
+            bottom: 0;
+            z-index: 1;
+        }
     }
 }

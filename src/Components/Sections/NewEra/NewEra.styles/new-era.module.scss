@@ -1,5 +1,15 @@
 .new-era-container {
     padding: 48px 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (width > 1200px) {
+            padding: 96px clamp(10%,20%,240px);
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+
+        }
 }
 
 #new-era-picture-container {
@@ -8,33 +18,59 @@
     justify-content: flex-start;
     flex-direction: column;
     width: inherit;
+    @media screen and (width > 1200px) {
+        width: 80%;
+    }
 }
 
 #rectangle {
     display: flex;
     align-items: center;
-
+    justify-content: center;
+    position: relative;
 }
 
 #rectangle-shape {
-    width: 361px;
-    height: 361px;
-    rotate: 45deg;
-    z-index: -1;
-    left: 50%;
+    width: 70%;
+    max-width: 314px;
+    padding-top: clamp(20%, 70%, 314px);
+    transform: rotate(315deg);
+    left: 30%;
     translate: -50%;
-    justify-self: center;
+    top: 50%;
+    transform-origin: 0 0;
+    z-index: -1;
     position: absolute;
-
+    display: inline;
     border: 1px solid var(--button-decorations-color);
+        @media screen and (width > 650px) {
+    left: 40%;
+        }
+        @media screen and (width > 1200px) {
+            max-width: 675px;
+            top: 45%;
+            padding-top: clamp(40%, 70%, 675px);
+        }
 
 }
 
+.photo-container{
+    :nth-child(1){
+        margin-right: 16px;
+    }
+}
+
 #photo1 {
-    margin-right: 16px;
     img{
         width:121px ;
         height: 181px;
+        box-shadow: 0px 0px 11px 10px rgba(255, 255, 255, 1);
+        @media screen and (width > 1200px) {
+            max-width: 342px;
+            max-height: 512px;
+            width: 342px;
+            height: 512px;
+            }
     }
 }
 
@@ -42,6 +78,13 @@
     img{
         width: 121px;
         height: 181px;
+        box-shadow: 0px 0px 11px 10px rgba(255, 255, 255, 1);
+        @media screen and (width > 1200px) {
+                max-width: 464px;
+                max-height: 348px;
+                width: 464px;
+                height: 348px;
+            }
     }
 }
 
@@ -49,10 +92,18 @@
     img{
         width: 207px;
         height: 139px;
+        box-shadow: 0px 0px 11px 10px rgba(255, 255, 255, 1);
+        @media screen and (width > 1200px) {
+                max-width: 586px;
+                max-height: 392px;
+                width: 586px;
+                height: 392px;
+            }
     }
 }
 
 #new-era-text-container{
+        text-align: left;
     h2{
         margin-bottom: 32px;
         color: var(--h2-color);
@@ -60,7 +111,6 @@
         font-size: 25px;
         font-weight: 400;
         line-height: 30px;
-        text-align: left;
     }
 
     p {
@@ -71,4 +121,8 @@
         font-weight: 400;
         line-height: 28px;
         /* 200% */}
+    @media screen and (width > 1200px) {
+        width: 20%;
+        margin-right: 146px;
+    }
 }

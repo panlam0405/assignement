@@ -15,11 +15,33 @@
     height: 37px;
     justify-content: flex-end;
     margin: 0 24px;
+    z-index: 1;
+    overflow: hidden;
 }
 
 
 .button:hover{
-    background-color: #FCF8F5;
     color: #000;
     border: 1px solid var(--button-background-color);
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--background-color);
+    opacity: 0;
+    left: 43%;
+    rotate: 43deg;
+    border-radius: 50% 0;
+    transition:0.45s  all cubic-bezier(1, 0.01, 1, 0.32);
+    transform: scale(1, 1);
+}
+
+.button:hover::after {
+    transform: scale(15, 15);
+    left: 0;
+    opacity: 1;
 }

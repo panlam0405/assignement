@@ -13,7 +13,15 @@ export default function HeroSection() {
 				<div
 					id='hero-picture-container'
 					className={styles["hero-picture-container"]}
-				></div>
+				>
+					<div className={styles.text}>
+						<h1>Grand opening</h1>
+						<p>
+							We are in great anticipation of the moment when our doors open to
+							welcome you.
+						</p>
+					</div>
+				</div>
 			</div>
 			<div id={styles["hero-text-container"]}>
 				<div id='hero-text-rect'>

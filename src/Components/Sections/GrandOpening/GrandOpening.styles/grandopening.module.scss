@@ -4,6 +4,9 @@
     flex-direction: column;
     align-items: center;
     align-self: stretch;
+    @media screen and (width > 1200px) {
+        padding: 96px clamp(10%,20%,240px);
+    }
 }
 
 .grand-opening-title {color: var(--title-black, #3D4244);

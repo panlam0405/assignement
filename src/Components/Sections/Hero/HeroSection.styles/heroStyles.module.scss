@@ -9,6 +9,13 @@
     padding: 16px 0;
     display: flex;
     justify-content: space-around;
+    @media screen and (width > 1200px) {
+        all:unset;
+        position : absolute;
+        padding: 16px 0;
+        width: fit-content;
+        right: 0;
+        }
 }
 
 #hero-button-decorator {
@@ -16,6 +23,9 @@
     height: 0;
     margin: auto;
     border: 1px solid var(--button-decorations-color);
+    @media screen and (width > 1200px) {
+        all:unset
+        }
 }
 
 #hero-text-container{
@@ -34,9 +44,30 @@
     z-index: 0;
 }
 
+.text {
+    color: #fff;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    
+    h1 {
+    font-weight: 400;    
+    font-size: 64px;
+    line-height: 68px;
+    margin-bottom: 32px;
+}
+    p {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+
 .hero-picture-container{
     background: url('hero-picture.png'), lightgray 50% ;
     background-size: cover;
     background-position: center;
     height: 768px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
